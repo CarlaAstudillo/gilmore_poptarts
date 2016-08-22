@@ -36,7 +36,7 @@
     
     .header svg {
       width: 100%;
-      height: 500px;
+      height: 300px;
       margin: 20px 0;
     }
     .header h1 {
@@ -45,12 +45,24 @@
     }
     .header .description {
       margin: 20px auto;
-      width: 620px;
+      width: 900px;
+    }
+
+    .header .description p {
+    	font-family: 'Open Sans', sans-serif;
+    	text-align: left;
+      
+    }
+
+    .header a {
+    	color: #dd3497;
+    	text-decoration: underline;
+
     }
 
 
  .scores {
- 	font-family:  sans-serif;
+ 	font-family: 'Open Sans', sans-serif;
  	padding-top: 5px;
  	font-size: 10px;
  	color: #777;
