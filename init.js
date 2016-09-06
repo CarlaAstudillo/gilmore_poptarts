@@ -19,6 +19,8 @@ var strokeColor = '#444';
 
 var frostlinesvg = ['M3.6,33.8c-0.3,0.1-0.8,0.1-1-0.2c-0.4-0.4-0.4-1,0-1.4c0.8-0.8,0.8-2,0.8-3.4c0-1.7-0.1-3.5,1.5-5   c0.8-0.8,1.7-1.3,2.6-1.7c0.8-0.4,1.5-0.8,2.1-1.3c1.1-1,1.9-2.3,2.3-3.7l0.1-0.3c0.4-1.6,0.8-3,2.1-4.5c0.8-0.9,2-1.4,3-1.9   c0.7-0.3,1.3-0.6,1.9-1c1.3-0.9,2.3-2,2.9-2.9c0.5-0.8,0.6-1.7,0.7-2.7c0.1-0.5,0.1-0.9,0.2-1.4l0-0.2c0.1-0.5,0.6-0.9,1.2-0.8   c0.5,0.1,0.9,0.6,0.8,1.2l0,0.2c-0.1,0.5-0.1,0.9-0.2,1.3c-0.1,1.1-0.3,2.3-1,3.5c-1,1.6-2.6,2.9-3.5,3.5c-0.7,0.5-1.5,0.8-2.2,1.2   c-0.9,0.4-1.8,0.8-2.4,1.5c-1,1.1-1.3,2.1-1.7,3.7l-0.1,0.3c-0.5,1.8-1.4,3.4-2.8,4.7c-0.8,0.7-1.6,1.2-2.5,1.6   c-0.8,0.4-1.6,0.8-2.1,1.4c-0.9,0.9-0.9,2.1-0.9,3.5c0,1.6,0.1,3.4-1.3,4.8C3.8,33.7,3.7,33.8,3.6,33.8z']
 
+var legendfrostlinedata = [{"character": "Emily Gilmore", "color": "#009DDC"}, {"character": "Paris Gellar", "color": "#FF1B1C"}, {"character": "Lane Kim", "color": "#A9714B"}, {"character": "Mrs. Kim", "color": "#9055A2"}]
+
 
 
 //Create the legend //
@@ -31,7 +33,7 @@ var frostlinesvg = ['M3.6,33.8c-0.3,0.1-0.8,0.1-1-0.2c-0.4-0.4-0.4-1,0-1.4c0.8-0
       var legendPopTarts = legend.append('g')
         .attr('transform', 'translate(' + legendWidth/ 8 + ',0)')
         .selectAll('g')
-        .data(["HEIGHT OF POP-TART = KEVIN'S SCORE ", "WIDTH OF POP-TART = DEMI'S SCORE"])
+        .data(["HEIGHT OF POP-TART = KEVIN'S SCORE", "WIDTH OF POP-TART = DEMI'S SCORE"])
         .enter().append('g')
         .attr('transform', function(d, i) {
           var x = i * (poptartSize * 1.6);
@@ -151,10 +153,47 @@ for (var i = 0; i < 20; i++) {
 
 
 
+  var legendFrostLine = legend.append('g')
+        .attr('transform', 'translate(' + legendWidth/2.5 + ',110)')
+        .selectAll('g')
+        .data(legendfrostlinedata)
+        .enter().append('g')
+        .attr('transform', function(d, i) {
+          var x = i * (poptartSize);
+          return 'translate(' + [x, 0] + ')';
+        });
 
 
-// Draw frost line to rep fave characters
-// Draw legends
+    legendFrostLine.append('text')
+        .attr('y', 115)
+        .attr('text-anchor', 'middle')
+        .attr('fill', '#444')
+        .style('font-size', '12px')
+        .text(function(d) {return d.character});
+
+
+      legendFrostLine.append('path')
+         .attr('transform', 'translate(0,172)')
+         .attr('transform', 'scale(1.4)translate(0,35)')
+        .attr('d', frostlinesvg)
+        .style("stroke", '#444')
+    .style('stroke-width', 0.5) 
+        .attr('fill', function(d) {
+          return d.color })
+
+
+  var legendFrosttext = legend.append('text')
+    .attr('transform', 'translate(' + legendWidth/2 + ',122)')
+    .attr('fill', '#444')
+    .attr('y', 133)
+    .attr("x", 0)
+        .style('font-size', '12px')
+        .text("LINE OF FROST = CHARACTER APPEARANCE BY...");
+
+
+
+
+
 
 
 
