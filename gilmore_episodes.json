@@ -1883,5 +1883,18 @@
     "emily": "Y",
     "lane": "Y",
     "mrskim": "N"
+  },
+   {
+    "season": 7,
+    "episode": "7.15 I'm A Kayak, Hear Me Roar",
+    "kevin_score": 7.5,
+    "demi_score": 7.5,
+    "guest_score": 0,
+    "imdb_score": 8,
+    "pop_ref": 14,
+    "paris": "Y",
+    "emily": "Y",
+    "lane": "N",
+    "mrskim": "N"
   }
 ]
