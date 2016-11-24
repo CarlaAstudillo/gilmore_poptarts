@@ -248,7 +248,7 @@
   },
   {
     "season": 1,
-    "episode": "1.20 P.S. I Lo...",
+    "episode": "1.20 P.S. I LoÉ",
     "kevin_score": 7,
     "demi_score": 6,
     "guest_score": 6,
@@ -1861,7 +1861,7 @@
   {
     "season": 7,
     "episode": "7.13 I'd Rather Be In Philadelphia",
-    "kevin_score": 6.5,
+    "kevin_score": 4.5,
     "demi_score": 5,
     "guest_score": 5.5,
     "imdb_score": 8.1,
@@ -1884,7 +1884,7 @@
     "lane": "Y",
     "mrskim": "N"
   },
-   {
+  {
     "season": 7,
     "episode": "7.15 I'm A Kayak, Hear Me Roar",
     "kevin_score": 7.5,
@@ -1895,6 +1895,97 @@
     "paris": "Y",
     "emily": "Y",
     "lane": "N",
+    "mrskim": "N"
+  },
+  {
+    "season": 7,
+    "episode": "7.16 Will You Be My Lorelai Gilmore",
+    "kevin_score": 6.5,
+    "demi_score": 8.5,
+    "guest_score": 6,
+    "imdb_score": 8.2,
+    "pop_ref": 22,
+    "paris": "N",
+    "emily": "N",
+    "lane": "Y",
+    "mrskim": "Y"
+  },
+  {
+    "season": 7,
+    "episode": "7.17 Gilmore Girls Only",
+    "kevin_score": 7.5,
+    "demi_score": 6,
+    "guest_score": 8.5,
+    "imdb_score": 7.9,
+    "pop_ref": 17,
+    "paris": "N",
+    "emily": "Y",
+    "lane": "Y",
+    "mrskim": "N"
+  },
+  {
+    "season": 7,
+    "episode": "7.18 Hay Bale Maze",
+    "kevin_score": 6.2,
+    "demi_score": 6,
+    "guest_score": 6,
+    "imdb_score": 8,
+    "pop_ref": 24,
+    "paris": "Y",
+    "emily": "N",
+    "lane": "N",
+    "mrskim": "N"
+  },
+  {
+    "season": 7,
+    "episode": "7.19 It's Just Like Riding a Bike",
+    "kevin_score": 6.5,
+    "demi_score": 7,
+    "guest_score": 6,
+    "imdb_score": 8.3,
+    "pop_ref": 8,
+    "paris": "Y",
+    "emily": "N",
+    "lane": "N",
+    "mrskim": "N"
+  },
+  {
+    "season": 7,
+    "episode": "7.20 Lorelai? Lorelai?",
+    "kevin_score": 7,
+    "demi_score": 8,
+    "guest_score": 0,
+    "imdb_score": 8.7,
+    "pop_ref": 39,
+    "paris": "Y",
+    "emily": "Y",
+    "lane": "Y",
+    "mrskim": "N"
+  },
+  {
+    "season": 7,
+    "episode": "7.21 Unto the Breach",
+    "kevin_score": 7,
+    "demi_score": 7.5,
+    "guest_score": 3,
+    "imdb_score": 8.2,
+    "pop_ref": 13,
+    "paris": "Y",
+    "emily": "Y",
+    "lane": "N",
+    "mrskim": "N"
+  },
+  {
+    "season": 7,
+    "episode": "7.22 Bon Voyage",
+    "kevin_score": 6.6,
+    "demi_score": 6.5,
+    "guest_score": 8,
+    "imdb_score": 9.1,
+    "pop_ref": 6,
+    "paris": "N",
+    "emily": "Y",
+    "lane": "Y",
     "mrskim": "N"
   }
 ]
